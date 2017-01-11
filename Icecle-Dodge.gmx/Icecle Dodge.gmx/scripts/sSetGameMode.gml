@@ -1,0 +1,3 @@
+global.gameMode ++;
+sSave();
+sLoad();
