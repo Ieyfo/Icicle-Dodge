@@ -26,49 +26,53 @@
     <extension index="0">extensions\Easy Menu</extension>
   </NewExtensions>
   <sounds name="sound">
-    <sound>sound\audIcicleHit</sound>
-    <sound>sound\audMenuBG</sound>
-    <sound>sound\audTap</sound>
-    <sound>sound\audRoar</sound>
+    <sound>sound\aud_IcicleHit</sound>
+    <sound>sound\aud_Menu_BG</sound>
+    <sound>sound\aud_Tap</sound>
+    <sound>sound\aud_Roar</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Elements">
       <sprites name="Enviorment">
-        <sprite>sprites\sIcicle</sprite>
-        <sprite>sprites\sGround</sprite>
-        <sprite>sprites\sCloud</sprite>
+        <sprite>sprites\spr_Icicle</sprite>
+        <sprite>sprites\spr_FishHole</sprite>
+        <sprite>sprites\spr_Ground</sprite>
+        <sprite>sprites\spr_Cloud</sprite>
+        <sprite>sprites\sTest</sprite>
       </sprites>
       <sprites name="Power Ups">
-        <sprite>sprites\sPowerUpShield</sprite>
-        <sprite>sprites\sprPowerUpShieldPlayer</sprite>
-        <sprite>sprites\sIcicleSlow</sprite>
-        <sprite>sprites\sPowerUpBreak</sprite>
-        <sprite>sprites\sPowerUpBreakGame</sprite>
+        <sprite>sprites\spr_NPowerUp_FishHole</sprite>
+        <sprite>sprites\spr_PowerUp_Shield</sprite>
+        <sprite>sprites\spr_PowerUp_Shield_Player</sprite>
+        <sprite>sprites\spr_Icicle_Slow</sprite>
+        <sprite>sprites\spr_PowerUp_Break</sprite>
+        <sprite>sprites\spr_PowerUp_Break_Game</sprite>
+        <sprite>sprites\sprite30</sprite>
       </sprites>
-      <sprite>sprites\sCubeCoins</sprite>
-      <sprite>sprites\sDeathSkull</sprite>
+      <sprite>sprites\spr_Cube_Coins</sprite>
+      <sprite>sprites\spr_Death_Skull</sprite>
     </sprites>
     <sprites name="Player">
-      <sprite>sprites\sPenguinNormal</sprite>
-      <sprite>sprites\sPenguinZebra</sprite>
-      <sprite>sprites\sPenguinCamo</sprite>
-      <sprite>sprites\sPenguinWizard</sprite>
-      <sprite>sprites\sPenguinDevil</sprite>
-      <sprite>sprites\sPenguinSkull</sprite>
-      <sprite>sprites\sPenguinAngel</sprite>
-      <sprite>sprites\sPenguinAgent</sprite>
-      <sprite>sprites\sPenguinVampire</sprite>
-      <sprite>sprites\sPenguinGenie</sprite>
-      <sprite>sprites\sPenguinRobot</sprite>
-      <sprite>sprites\sPenguinHeadless</sprite>
-      <sprite>sprites\sPenguinGhost</sprite>
-      <sprite>sprites\sPenguinFisherman</sprite>
+      <sprite>sprites\spr_Penguin</sprite>
+      <sprite>sprites\spr_Player_Zebra</sprite>
+      <sprite>sprites\spr_Player_Camo</sprite>
+      <sprite>sprites\spr_Player_Wizard</sprite>
+      <sprite>sprites\spr_Player_Devil</sprite>
+      <sprite>sprites\spr_Player_Skull</sprite>
+      <sprite>sprites\spr_Player_Angel</sprite>
+      <sprite>sprites\spr_Player_Agent</sprite>
+      <sprite>sprites\spr_Player_Vampire</sprite>
+      <sprite>sprites\spr_Player_Genie</sprite>
+      <sprite>sprites\spr_Player_Robot</sprite>
+      <sprite>sprites\spr_Player_Headless_White</sprite>
+      <sprite>sprites\spr_Player_Ghost</sprite>
+      <sprite>sprites\spr_Player_Fisherman</sprite>
     </sprites>
     <sprites name="UI">
-      <sprite>sprites\sNewHS</sprite>
-      <sprite>sprites\sShopOutline</sprite>
-      <sprite>sprites\sShopOutlineUnlocked</sprite>
-      <sprite>sprites\sShopOutlineLocked</sprite>
+      <sprite>sprites\spr_New_HS</sprite>
+      <sprite>sprites\spr_Shop_Outline</sprite>
+      <sprite>sprites\spr_Shop_Outline_Unlocked</sprite>
+      <sprite>sprites\spr_Shop_Outline_Locked</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -82,101 +86,104 @@
       <script>scripts\em_destroy.gml</script>
     </scripts>
     <scripts name="Menus">
-      <script>scripts\sEndGame.gml</script>
-      <script>scripts\sCredits.gml</script>
-      <script>scripts\sOptions.gml</script>
-      <script>scripts\sStats.gml</script>
-      <script>scripts\sSetGameMode.gml</script>
-      <script>scripts\sShop.gml</script>
+      <script>scripts\scr_End_Game.gml</script>
+      <script>scripts\scr_Credits.gml</script>
+      <script>scripts\scr_Options.gml</script>
+      <script>scripts\scr_Stats.gml</script>
+      <script>scripts\scr_Set_Game_Mode.gml</script>
+      <script>scripts\scr_Shop.gml</script>
     </scripts>
     <scripts name="Other">
-      <script>scripts\sStartGame.gml</script>
-      <script>scripts\sGameOver.gml</script>
-      <script>scripts\sHighScore.gml</script>
-      <script>scripts\sPowerUpsArray.gml</script>
-      <script>scripts\sIcicles.gml</script>
+      <script>scripts\scr_Start_Game.gml</script>
+      <script>scripts\scr_Game_Over.gml</script>
+      <script>scripts\scr_HighScore.gml</script>
+      <script>scripts\scr_Power_Ups_Array.gml</script>
+      <script>scripts\scr_Icicles.gml</script>
     </scripts>
-    <script>scripts\sSave.gml</script>
-    <script>scripts\sLoad.gml</script>
+    <script>scripts\scr_Save.gml</script>
+    <script>scripts\scr_Load.gml</script>
     <scripts name="Shop">
-      <script>scripts\sShopArrayInfo.gml</script>
-      <script>scripts\sShopArrayDraw.gml</script>
+      <script>scripts\scr_Shop_Array_Info.gml</script>
+      <script>scripts\scr_Shop_Array_Draw.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\fMenu</font>
-    <font>fonts\fCreditsTitle</font>
-    <font>fonts\fCreditsCredits</font>
-    <font>fonts\fGameOver</font>
-    <font>fonts\fGameOverText</font>
-    <font>fonts\fStats</font>
-    <font>fonts\fnormal</font>
+    <font>fonts\fnt_Menu</font>
+    <font>fonts\fnt_Credits_Title</font>
+    <font>fonts\fnt_Credits_Credits</font>
+    <font>fonts\fnt_Game_Over</font>
+    <font>fonts\fnt_Game_Over_Text</font>
+    <font>fonts\fnt_Stats</font>
+    <font>fonts\fnt_normal</font>
   </fonts>
   <objects name="objects">
     <objects name="Elements">
       <objects name="Enviroment">
-        <object>objects\oGround</object>
-        <object>objects\oIcicle</object>
-        <object>objects\oCloud</object>
+        <object>objects\obj_Ground</object>
+        <object>objects\obj_Icicle</object>
+        <object>objects\obj_Cloud</object>
       </objects>
       <objects name="Power Ups">
-        <object>objects\oPowerUpShield</object>
-        <object>objects\oDeathSkull</object>
-        <object>objects\oPowerUpShieldPlayer</object>
-        <object>objects\oPowerUpSlow</object>
-        <object>objects\oPowerUpBreak</object>
-        <object>objects\oPowerUpBreakGame</object>
+        <object>objects\obj_NPowerUp_FishHole</object>
+        <object>objects\obj_PowerUp_Shield</object>
+        <object>objects\obj_Death_Skull</object>
+        <object>objects\obj_PowerUp_Shield_Player</object>
+        <object>objects\obj_NPowerUp_FishHole_Game</object>
+        <object>objects\obj_PowerUp_Slow</object>
+        <object>objects\obj_PowerUp_Break</object>
+        <object>objects\obj_PowerUp_Break_Game</object>
       </objects>
-      <object>objects\oCubeCoin</object>
+      <object>objects\obj_Cube_Coin</object>
     </objects>
     <objects name="Player">
-      <object>objects\oPlayer</object>
+      <object>objects\obj_Player</object>
       <objects name="Player Shop">
-        <object>objects\oShopPenguinNormal</object>
-        <object>objects\oShopPenguinZebra</object>
-        <object>objects\oShopPenguinCamo</object>
-        <object>objects\oShopPenguinWizard</object>
-        <object>objects\oShopPenguinDevil</object>
-        <object>objects\oShopPenguinSkull</object>
-        <object>objects\oShopPenguinAngel</object>
-        <object>objects\oShopPenguinAgent</object>
-        <object>objects\oShopPenguinVampire</object>
-        <object>objects\oShopPenguinGenie</object>
-        <object>objects\oShopPenguinRobot</object>
-        <object>objects\oShopPenguinHeadless</object>
-        <object>objects\oShopPenguinGhost</object>
-        <object>objects\oShopPenguinFisherman</object>
+        <object>objects\obj_Shop_Penguin_Normal</object>
+        <object>objects\obj_Shop_Penguin_Zebra</object>
+        <object>objects\obj_Shop_Penguin_Camo</object>
+        <object>objects\obj_Shop_Penguin_Wizard</object>
+        <object>objects\obj_Shop_Penguin_Devil</object>
+        <object>objects\obj_Shop_Penguin_Skull</object>
+        <object>objects\obj_Shop_Penguin_Angel</object>
+        <object>objects\obj_Shop_Penguin_Agent</object>
+        <object>objects\obj_Shop_Penguin_Vampire</object>
+        <object>objects\obj_Shop_Penguin_Genie</object>
+        <object>objects\obj_Shop_Penguin_Robot</object>
+        <object>objects\obj_Shop_Penguin_Headless_White</object>
+        <object>objects\obj_Shop_Penguin_Ghost</object>
+        <object>objects\obj_Shop_Penguin_Fisherman</object>
       </objects>
     </objects>
     <objects name="Controllers">
-      <object>objects\oSpawnNormal</object>
-      <object>objects\oSpawnStraightLine</object>
-      <object>objects\oPowerUpSpawnNormal</object>
-      <object>objects\oEffects</object>
-      <object>objects\oPlayerInfo</object>
-      <object>objects\oMenuControl</object>
-      <object>objects\oElementSpawn</object>
-      <object>objects\oUnlockControl</object>
+      <object>objects\obj_Spawn_Normal</object>
+      <object>objects\obj_Spawn_Straight_Line</object>
+      <object>objects\obj_PowerUp_Spawn_Normal</object>
+      <object>objects\obj_Effects</object>
+      <object>objects\obj_Player_Info</object>
+      <object>objects\obj_Menu_Control</object>
+      <object>objects\obj_Element_Spawn</object>
+      <object>objects\obj_Unlock_Control</object>
     </objects>
     <objects name="Menus">
-      <object>objects\oCredits</object>
-      <object>objects\omenu</object>
-      <object>objects\oOptions</object>
-      <object>objects\oGameOver</object>
-      <object>objects\oStats</object>
-      <object>objects\oGameModes</object>
-      <object>objects\oShop</object>
+      <object>objects\obj_Credits</object>
+      <object>objects\obj_menu</object>
+      <object>objects\obj_Options</object>
+      <object>objects\obj_Menus_Effects</object>
+      <object>objects\obj_Game_Over</object>
+      <object>objects\obj_Stats</object>
+      <object>objects\obj_Game_Modes</object>
+      <object>objects\obj_Shop</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rMenu</room>
-    <room>rooms\rGameNormal</room>
-    <room>rooms\rGameStraightLine</room>
-    <room>rooms\rGameOver</room>
-    <room>rooms\rCredits</room>
-    <room>rooms\rOptions</room>
-    <room>rooms\rStats</room>
-    <room>rooms\rShop</room>
+    <room>rooms\rm_Menu</room>
+    <room>rooms\rm_Game_Normal</room>
+    <room>rooms\rm_Game_Straight_Line</room>
+    <room>rooms\rm_Game_Over</room>
+    <room>rooms\rm_Credits</room>
+    <room>rooms\rm_Options</room>
+    <room>rooms\rm_Stats</room>
+    <room>rooms\rm_Shop</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
